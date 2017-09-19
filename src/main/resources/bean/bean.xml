@@ -4,4 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+    <bean id="person" class="bean.Person" init-method="myInit" destroy-method="myDestroy">
+        <property name="address" value="shanghai">
+
+        </property>
+        <property name="name" value="harry"/>
+    </bean>
 </beans>

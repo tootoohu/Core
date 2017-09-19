@@ -12,6 +12,7 @@ public class BeanLifeCycleTest {
 
         System.out.println("close the container....");
 
+        factory.registerShutdownHook();
     }
 
 }
