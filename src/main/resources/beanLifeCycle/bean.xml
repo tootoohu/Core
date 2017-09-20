@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="beanLifeCycle.Person" init-method="myInit" destroy-method="myDestroy">
+        <property name="address" value="Shanghai">
+
+        </property>
+        <property name="name" value="Infor"/>
+        <constructor-arg ref="identifier" />
+    </bean>
+    <bean class="beanLifeCycle.MyBeanFactoryPostProcessor" id="myBeanFactoryPostProcessor" />
+    <bean class="beanLifeCycle.MyBeanPostProcessor" id="myBeanPostProcessor" />
+    <bean class="beanLifeCycle.MyInstantiationAwareBeanPostProcessor" id="myInstantiationAwareBeanPostProcessor" ></bean>
+
+    <bean class="beanLifeCycle.Identifier" id="identifier">
+        <constructor-arg value="123456789"></constructor-arg>
+        <property name="hukou" value="shanghai"/>
+    </bean>
+</beans>
