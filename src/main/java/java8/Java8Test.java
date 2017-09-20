@@ -8,6 +8,6 @@ public class Java8Test {
 
     public static void main(String[] args){
         List<String> list = Arrays.asList("dog","cat","puppy","tiger");
-        list.forEach(a-> System.out.println(a));
+        //list.forEach(a-> System.out.println(a));
     }
 }
