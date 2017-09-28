@@ -1,4 +1,6 @@
-package data;
+package springdata;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +17,7 @@ public class Customer {
 
     @Id
     @GeneratedValue(generator="uuidGenerator")
-  //  @GenericGenerator(name="uuidGenerator", strategy="uuid")
+   @GenericGenerator(name="uuidGenerator", strategy="uuid")
     @Column(length=40)
     private String id;
 

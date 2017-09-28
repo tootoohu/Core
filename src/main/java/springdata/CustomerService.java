@@ -1,4 +1,4 @@
-package data;
+package springdata;
 
 /**
  * Created by HL on 17/9/20.
@@ -14,7 +14,7 @@ public class CustomerService {
 
     @Transactional
     public Customer getByName(String name){
-        return CustomerRepository.getByName(name);
+        return customerRepository.getByName(name);
     }
 
 }
