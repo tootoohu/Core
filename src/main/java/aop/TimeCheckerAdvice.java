@@ -1,10 +1,12 @@
+package aop;
+
 import java.lang.reflect.Method;
 
 /**
  * Created by HL on 17/9/14.
  * AOP Advice implementation
  */
-public class TimeCheckerAdvice implements Advice{
+public class TimeCheckerAdvice implements Advice {
 
     private long beginTime;
 
