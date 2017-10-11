@@ -6,7 +6,9 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
-
+/*
+bean class
+ */
 public class Person implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean{
 
     private String name;

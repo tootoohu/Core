@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 无参构造函数 -->
+    <bean id="user" class="beanCreation.User"/>
+    <!-- 静态工厂创建bean-->
+    <bean id="staticuser" class="beanCreation.UserBeanFactory" factory-method="getUser"/>
+
+    <!-- 创建工厂对象-->
+    <bean id="beanfactory" class="beanCreation.UserBeanFactory"/>
+    <!-- 使用实例工厂创建-->
+    <bean id="shiliuser" factory-bean="beanfactory" factory-method="getUserInstance"/>
+
+</beans>

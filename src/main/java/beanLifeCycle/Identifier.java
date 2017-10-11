@@ -1,4 +1,7 @@
 package beanLifeCycle;
+/*
+bean class need to be instanced.
+ */
 
 public class Identifier {
 
