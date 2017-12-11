@@ -11,15 +11,13 @@ public class TimeCheckerAdvice implements Advice {
     private long beginTime;
 
     public void before(Method method) {
-        System.out.println("-----start invocating " + method.getName() + "--------");
+        System.out.println("-----before " + method.getName() + "--------");
         beginTime = System.currentTimeMillis();
     }
 
     public void after(Method method) {
-        System.out.println("------end invocation of " + method.getName() + "--------");
+        System.out.println("------after " + method.getName() + "--------");
         long endTime = System.currentTimeMillis();
         System.out.println("Take time of " + (endTime - beginTime));
-
-
     }
 }
