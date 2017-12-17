@@ -1,5 +1,6 @@
 package java8;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Comparator;
@@ -27,6 +28,11 @@ public class LambdaTest {
             System.out.println(i);
 
         }
+
+    }
+
+    @Before
+    public void setUp() throws Exception {
 
     }
 
